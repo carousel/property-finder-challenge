@@ -7,7 +7,7 @@ miroslav.trninic@gmail.com
 * monolog PHP library (for error loggins)
 
 ## Run
-* from the CLI run php index.php
+* from the CLI run php index.php main front controller for the scripts
 
 ## Overview
 Starting point is randomizer (Trip\Tools\Randomizer) class which will take random set of data (src/data.php). This set of data will be shuffled and 
@@ -16,8 +16,7 @@ Since number of paths is increased rapidly after every call (graph traversal) it
 
     `departure -> distance -> arrival`
 
-Next, after data is prepared it is combined and displayed on CLI (basic formatting). index.php is used as front-controller and contains calls to all classes needed to display output.
-There is also basic PHPUnit test,for the proof of concept
+Next, after data is prepared it is combined and displayed on CLI (basic formatting). index.php is used as front-controller and contains calls to all classes needed to display output.There is also basic PHPUnit test,for the proof of concept
 
 Note that this is not optimized in any way and there are lots of loops and nested conditionals that are heavy in algorithmic sense. All code is just for the purpose of code challenge.
 Multiple things can be improved (from tests, optimization, dockerization, better code structure ...)
