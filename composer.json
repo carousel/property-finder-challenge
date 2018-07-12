@@ -1,0 +1,44 @@
+{
+    "name": "Property fined trip",
+    "type": "project",
+    "description": "property finder trip challenge",
+    "keywords": [
+        "property",
+        "challenge",
+        "trip"
+    ],
+    "minimum-stability": "dev",
+    "homepage": "https://github.com/carousel/property-finder-challenge",
+    "license": "MIT",
+    "require":{
+        "ramsey/uuid" : "^3.7.1",
+        "carousel/container": "*",
+        "monolog/monolog": "^1.23",
+        "guzzlehttp/guzzle": "^6.3@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.1.4"
+    },
+    "authors": [
+        {
+            "name": "Miroslav Trninic",
+            "email": "miroslav.trninic@gmail.com",
+            "homepage": "http://antitask.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Trip\\": "src"
+        },
+        "files": ["src/data.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

@@ -1,4 +1,4 @@
-# Cardoboards trip application (property finder challenge)
+# Cardboards (trip formatter) application (property finder challenge)
 miroslav.trninic@gmail.com
 
 ## Technology stack
@@ -17,6 +17,7 @@ Since number of paths is increased rapidly after every call (graph traversal) it
     `departure -> distance -> arrival`
 
 Next, after data is prepared it is combined and displayed on CLI (basic formatting). index.php is used as front-controller and contains calls to all classes needed to display output.
+There is also basic PHPUnit test,for the proof of concept
 
 Note that this is not optimized in any way and there are lots of loops and nested conditionals that are heavy in algorithmic sense. All code is just for the purpose of code challenge.
-There is also basic PHPUnit test
+Multiple things can be improved (from tests, optimization, dockerization, better code structure ...)
